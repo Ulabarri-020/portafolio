@@ -1,0 +1,33 @@
+# Dependencies
+/node_modules/
+
+# Vite build output and local cache
+/dist/
+/dist-ssr/
+/.vite/
+
+# Local migration notes; not published with the repository
+/MIGRACION_VITE.md
+
+# Local environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs and test output
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+/coverage/
+
+# Local deployment metadata
+/.vercel/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+/.idea/

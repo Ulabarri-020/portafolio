@@ -1,38 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sobre mi</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="header__menu">
-            <a href="index.html" class="header__menu__link">home </a>
-            <a href="about.html" class="header__menu__link">sobre mi</a>
-            <a href="curriculum.html" class="header__menu__link">Crriculum</a>
-        </nav>
-       
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mí | Alfredo Sandoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+
+    <header class="topbar">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html" class="brand">
+          <span class="brand__dot"></span>
+          Alfredo <strong>Sandoval</strong>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav__links" id="main-menu">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#sobre-mi">Sobre mí</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="certificados.html">Certificados</a>
+          <a href="curriculum.html">CV</a>
+        </div>
+
+        <a class="button button--ghost" href="index.html#contacto">Contacto</a>
+      </nav>
     </header>
-    <main class="presentacion">
 
-        <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo">sobre mi</h1>
-            <p class="presentacion__contenido__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque rerum sit, necessitatibus sapiente aut perferendis! Autem, similique. Omnis atque corporis, consectetur rem molestias reiciendis maxime inventore cumque maiores similique!</p>
-            <p class="presentacion__contenido__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae non consectetur expedita nihil, sit unde dolorum nulla quod veritatis, harum molestias impedit adipisci similique facere quibusdam voluptate ipsa itaque?Lloreorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaque numquam eaque saepe nemo quisquam officia, unde error, consequuntur, doloribus recusandae consequatur quae distinctio et voluptatibus vero praesentium odit sit.</p>
+    <main id="main-content" class="page-shell container">
+      <section class="glass-card page-card about-page">
+        <div class="page-card__intro">
+          <p class="eyebrow">Sobre mí</p>
+          <h1>Más allá del código</h1>
+        </div>
 
-        </section>
-        <img class="imagen__personal" src="imagenes/personal.jpg" alt="imagen personal" srcset="">
+        <div class="about-layout">
+          <div class="about-layout__text">
+            <p>
+              Soy una persona curiosa, creativa y comprometida con construir
+              experiencias digitales funcionales y agradables de usar. Me gusta
+              combinar lógica, diseño visual y storytelling para generar
+              soluciones que conecten con las personas.
+            </p>
+            <p>
+              Mi camino está centrado en aprender cada día, mejorar la calidad de
+              mi trabajo y crear productos que aporten valor real al usuario.
+              Disfruto del proceso de transformar una idea en una interfaz clara,
+              atractiva y efectiva.
+            </p>
+            <p>
+              Además del desarrollo, me interesa el aprendizaje continuo, la
+              resolución de problemas, la investigación de nuevas tecnologías y la
+              mejora de la experiencia general de cada proyecto.
+            </p>
+          </div>
 
-
-
+          <div class="about-layout__media">
+            <div class="profile-ring profile-ring--small">
+              <img src="imagenes/personal.jpg" alt="Alfredo Sandoval" />
+            </div>
+            <div class="mini-metrics">
+              <div>
+                <strong>+3</strong>
+                <span>Especialidades</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Creatividad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <h4> DESARROLLADO POR ALFREDO SANDOVAL CONTACTO: 3112451062 &#169</h4>
-
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Alfredo Sandoval</p>
+        <p>Hecho con pasión • Diseño y código</p>
+      </div>
     </footer>
-</body>
+
+    <script type="module" src="style/main.js"></script>
+  </body>
 </html>

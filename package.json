@@ -1,0 +1,31 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio personal multipágina desarrollado con Vite, HTML, CSS y JavaScript.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "keywords": [
+    "portfolio",
+    "vite",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.8.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.8.1",
+  "devDependencies": {
+    "vite": "^8.3.2"
+  }
+}

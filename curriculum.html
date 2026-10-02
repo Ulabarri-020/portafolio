@@ -1,100 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style/style.css">
-   
-    <title>curriculum</title>
-    
-</head>
-<body>
-    <header class="header">
-        <nav class="header__menu">
-            <a href="index.html" class="header__menu__link">home </a>
-            <a href="about.html" class="header__menu__link">sobre mi</a>
-            <a href="curriculum.html" class="header__menu__link">Crriculum</a>
-        </nav>
-       <main class="presentacion__curri">
-        <aside class="aside">
-            <section >
-           
-                <h1 class="aside__titulo">Alfredo Sandoval</h1>
-                <h3 class="aside__carreras">Estudiante de ingenieria de sistemas </h3>
-                <h3 class="aside__carreras">Tecnico de progrmacion de aplicaciones y servios para la nube</h3>
-                <h1 class="aside__titulo">sobre mi</h1>
-                <p class="presentacion__contenido__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, aliquam numquam laudantium dolorum magni unde voluptatibus accusantium ullam ad vitae adipisci autem et quasi aut rem corrupti! Quasi, aliquam cupiditate.</p>
-    
-                <h1 class="aside__titulo">
-                    intereses
-                    
-                </h1>
-              
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV | Alfredo Sandoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
 
-             
-                <ul >
-                    <li>Videojuegos</li>
-                    <li>Desarrollar</li>
-                    <li>Bailar</li>
-                    <li>Entrenar</li>
-                    <li>Conecer Lugares</li>
-                </ul>
-            </div>
-              
-    
-                <h1 class="aside__titulo">
-                    contactos
-                </h1>
-                <div class="presentacion__contenido__texto">
-                <ul >
-                    <a href="" class="aside__contactos__img"> <img src="imagenes/instagram.png" alt=""></a>
-                    <a href="" class="aside__contactos__img"> <img src="imagenes/github.png" alt=""></a>
-                    <a href="" class="aside__contactos__img"> <img src="imagenes/linkedin.png" alt=""></a>
-                    <a href=""class="aside__contactos__img"> <img src="imagenes/twitter-novo.png" alt=""></a>
-                </ul>
-                </div>
-    
-         
-            </section>
+    <header class="topbar">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html" class="brand">
+          <span class="brand__dot"></span>
+          Alfredo <strong>Sandoval</strong>
+        </a>
 
-        </aside>
-       
-        <hr>
-        
-        <section >
-            <img src="imagenes/personal.jpg" alt="" >
-            <h1 class="presentacion__contenido__titulo"> habilidades</h1>
-            <p class="aside__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ipsam aliquid perspiciatis deserunt consectetur iste magni explicabo aspernatur hic perferendis recusandae, officiis dolor nihil. Labore blanditiis vel cumque facilis consequatur.</p>
-            <h1 class="presentacion__contenido__titulo">programas</h1>
-            <div class="presentacion__contenido__texto">
-            <ul class="aside__texto">
-                <li>html</li>
-                <li>css</li>
-                <li>js</li>
-                <li>c#</li>
-                <li>sql</li>
-            </ul>
-            </div>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
 
-            <h1 class="presentacion__contenido__titulo">estudios y experiencia</h1>
-            <div class="presentacion__contenido__texto">
-            <ul class="aside__texto">
-                
-                <li>tecnico en desarrollo de aplicaciones y servicios para la nube</li>
-                <li>estudiante de ingenieria de sistemas</li>
-                <li>institucion educativa institugto tecnico</li>
-                <li>cero experiencia</li>
-                <li>sql</li>
-           
-            </ul>
+        <div class="nav__links" id="main-menu">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="about.html">Sobre mí</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="certificados.html">Certificados</a>
+          <a href="curriculum.html">CV</a>
         </div>
 
-       
-
-        </section>
-       
-       
-       </main>
+        <a class="button button--ghost" href="index.html#contacto">Contacto</a>
+      </nav>
     </header>
-</body>
+
+    <main id="main-content" class="page-shell container">
+      <div class="resume-toolbar">
+        <p class="eyebrow">Perfil profesional</p>
+        <button class="button" id="print-resume" type="button">Imprimir / guardar PDF</button>
+      </div>
+
+      <article class="resume-sheet" aria-labelledby="resume-name">
+        <header class="resume-cover">
+          <div class="resume-cover__identity">
+            <p class="resume-cover__kicker">Curriculum vitae</p>
+            <h1 id="resume-name">Alfredo Sandoval</h1>
+            <p class="resume-cover__role">Estudiante de ingeniería de sistemas · Desarrollo web</p>
+          </div>
+          <img class="resume-cover__photo" src="imagenes/personal.jpg" alt="Retrato de Alfredo Sandoval" />
+        </header>
+
+        <div class="resume-sheet__body">
+          <aside class="resume-sidebar" aria-label="Perfil, contacto y habilidades">
+            <section class="resume-section">
+              <h2>Perfil</h2>
+              <p>Estudiante de ingeniería de sistemas con formación técnica en programación de aplicaciones y servicios para la nube. Interesado en crear soluciones web claras, accesibles y adaptables.</p>
+            </section>
+
+            <section class="resume-section">
+              <h2>Contacto</h2>
+              <ul class="resume-contact">
+                <li><span>Teléfono</span><a href="tel:+573112451062">+57 311 245 1062</a></li>
+                <li><span>Correo</span><a href="mailto:alfredosandoval@example.com">alfredosandoval@example.com</a></li>
+                <li><span>Ubicación</span><span>Colombia</span></li>
+                <li><span>GitHub</span><a href="https://github.com/Ulabarri-020">Ulabarri-020</a></li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h2>Herramientas</h2>
+              <ul class="resume-tags" aria-label="Tecnologías y herramientas">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL</li><li>C#</li><li>Git</li><li>Vite</li>
+              </ul>
+            </section>
+
+            <section class="resume-section">
+              <h2>Intereses</h2>
+              <p>Desarrollo web, diseño de interfaces, videojuegos y aprendizaje de nuevas tecnologías.</p>
+            </section>
+          </aside>
+
+          <div class="resume-main">
+            <section class="resume-section">
+              <h2>Formación</h2>
+              <div class="resume-entry">
+                <span class="resume-entry__date">En curso</span>
+                <div>
+                  <h3>Ingeniería de sistemas</h3>
+                  <p>Formación universitaria en sistemas, programación y resolución de problemas.</p>
+                </div>
+              </div>
+              <div class="resume-entry">
+                <span class="resume-entry__date">Formación técnica</span>
+                <div>
+                  <h3>Programación de aplicaciones y servicios para la nube</h3>
+                  <p>Formación técnica en desarrollo de aplicaciones y servicios cloud.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="resume-section">
+              <h2>Experiencia práctica</h2>
+              <div class="resume-entry">
+                <span class="resume-entry__date">Proyectos personales</span>
+                <div>
+                  <h3>Desarrollo de sitios y experiencias web</h3>
+                  <p>Práctica en estructura semántica, estilos adaptables, navegación entre páginas y preparación de sitios para despliegue.</p>
+                </div>
+              </div>
+              <p class="resume-note">Esta sección describe proyectos personales y académicos; no representa un cargo laboral.</p>
+            </section>
+
+            <section class="resume-section">
+              <h2>Fortalezas</h2>
+              <ul class="resume-strengths">
+                <li>Aprendizaje continuo y curiosidad técnica</li>
+                <li>Atención a la claridad y usabilidad</li>
+                <li>Organización y resolución de problemas</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Alfredo Sandoval</p>
+        <p>Hecho con pasión • Diseño y código</p>
+      </div>
+    </footer>
+
+    <script type="module" src="style/main.js"></script>
+  </body>
 </html>

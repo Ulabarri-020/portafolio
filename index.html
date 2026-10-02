@@ -1,47 +1,267 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio profesional de Alfredo Sandoval, desarrollador web con enfoque en diseño, accesibilidad y soluciones modernas."
+    />
+    <title>Alfredo Sandoval | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
 
-    <header class="header">
-        <nav class="header__menu">
-            <a href="index.html" class="header__menu__link">home </a>
-            <a href="about.html" class="header__menu__link">sobre mi</a>
-            <a href="curriculum.html" class="header__menu__link">Crriculum</a>
-        </nav>
-       
-    </header>
-    <main class="presentacion">
-        <section class="presentacion__contenido">
-        <h1 class="presentacion__contenido__titulo">Portafolio <strong>Alfredo Sandoval</strong></h1>
-        <p class="presentacion__contenido__texto">Mi nombre es alfredo sandoval y en est6e portafolio enseñera mis distintos proyectos he infomacion general
-            representativa de mi persona</p>
+    <header class="topbar">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html" class="brand" aria-label="Inicio">
+          <span class="brand__dot"></span>
+          Alfredo <strong>Sandoval</strong>
+        </a>
 
-    
-        <div class="presentaciones__enclaces">
-            <h2 class="presentaciones__enclaces__subtitulo">accede a mis redes sociales</h2>
-            
-        <a  class="presentaciones__enclaces__link" href="https://www.instagram.com/sandoval_020/" >
-            <img src="imagenes/instagram.png" alt="iconoinstagram">
-            instagram</a>
-        <a class="presentaciones__enclaces__link" href="https://github.com/Ulabarri-020">
-            <img src="imagenes/github.png" alt="iconogithub">github</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
 
+        <div class="nav__links" id="main-menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="certificados.html">Certificados</a>
+          <a href="curriculum.html">CV</a>
         </div>
-        
 
-    </section>
-    <img class="imagen__personal" src="imagenes/personal.jpg" alt="imagen personal" srcset="">
+        <a class="button button--ghost" href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero container" id="inicio">
+        <div class="hero__content">
+          <p class="eyebrow">Full Stack Developer • UI/UX • Cloud</p>
+          <h1>
+            Diseño limpio, <span>experiencias memorables</span> y soluciones que
+            funcionan.
+          </h1>
+          <p class="hero__text">
+            Soy Alfredo, un desarrollador apasionado por crear interfaces
+            modernas, funcionales y escalables con enfoque en rendimiento,
+            usabilidad, accesibilidad y estética.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="proyectos.html">Ver proyectos</a>
+            <a class="button button--ghost" href="curriculum.html">Ver CV</a>
+          </div>
+
+          <div class="hero__socials" aria-label="Redes sociales">
+            <a href="https://github.com/Ulabarri-020" target="_blank" rel="noreferrer" aria-label="GitHub de Alfredo Sandoval">
+              <img src="imagenes/github.png" alt="GitHub" />
+            </a>
+            <a href="https://www.instagram.com/sandoval_020/" target="_blank" rel="noreferrer" aria-label="Instagram de Alfredo Sandoval">
+              <img src="imagenes/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn de Alfredo Sandoval">
+              <img src="imagenes/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="glass-card glass-card--large">
+            <div class="profile-ring">
+              <img src="imagenes/personal.jpg" alt="Retrato de Alfredo Sandoval" />
+            </div>
+            <div class="glass-card__stats">
+              <div>
+                <strong>5+</strong>
+                <span>Proyectos</span>
+              </div>
+              <div>
+                <strong>2+</strong>
+                <span>Años aprendiendo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="sobre-mi">
+        <div class="section-heading">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Un desarrollador con visión digital</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card">
+            <p>
+              Me apasiona construir productos digitales con diseño elegante,
+              estructura sólida y una experiencia intuitiva para los usuarios. Me
+              interesa el desarrollo web moderno, la lógica del backend y la
+              creación de interfaces que conecten estética y funcionalidad.
+            </p>
+            <p>
+              Actualmente estoy fortaleciendo mis habilidades en desarrollo full
+              stack, programación con JavaScript, HTML, CSS, optimización y
+              despliegue en infraestructura cloud.
+            </p>
+          </article>
+
+          <div class="glass-card glass-card--compact">
+            <h3>Stack principal</h3>
+            <div class="chips">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Git</span>
+              <span>Vite</span>
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="proyectos">
+        <div class="section-heading section-heading--inline">
+          <div>
+            <p class="eyebrow">Proyectos</p>
+            <h2>Portafolio de soluciones creadas</h2>
+          </div>
+          <a class="button button--ghost" href="proyectos.html">Ver todos</a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-1"></div>
+            <div class="project-card__content">
+              <span class="badge">Landing Page</span>
+              <h3>Nova Studio</h3>
+              <p>
+                Diseño premium para una agencia creativa con animaciones suaves,
+                flujo de conversión y una experiencia mobile-first.
+              </p>
+              <div class="project-card__meta">
+                <span>Vite</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=nova" aria-label="Ver detalle de Nova Studio">Ver detalle</a>
+                <a href="https://nova-studio-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-2"></div>
+            <div class="project-card__content">
+              <span class="badge">Dashboard</span>
+              <h3>Pulse Metrics</h3>
+              <p>
+                Panel administrativo para seguimiento de KPI, métricas y datos en
+                tiempo real con diseño analítico e intuitivo.
+              </p>
+              <div class="project-card__meta">
+                <span>React</span>
+                <span>Charts</span>
+                <span>UI</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=pulse" aria-label="Ver detalle de Pulse Metrics">Ver detalle</a>
+                <a href="https://pulse-metrics-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-3"></div>
+            <div class="project-card__content">
+              <span class="badge">E-commerce</span>
+              <h3>Solar Cart</h3>
+              <p>
+                Tienda para productos tecnológicos con enfoque visual, secciones
+                destacadas y navegación fluida para mayor conversión.
+              </p>
+              <div class="project-card__meta">
+                <span>Shop</span>
+                <span>UX</span>
+                <span>Front</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=solar" aria-label="Ver detalle de Solar Cart">Ver detalle</a>
+                <a href="https://solar-cart-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="certificados">
+        <div class="section-heading section-heading--inline">
+          <div>
+            <p class="eyebrow">Certificados</p>
+            <h2>Aprendizaje constante y validado</h2>
+          </div>
+          <a class="button button--ghost" href="certificados.html">Ver todos</a>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="glass-card certificate-card">
+            <div class="certificate-card__icon">01</div>
+            <h3>Desarrollo Frontend</h3>
+            <p>Especialización en interfaces modernas, responsive design y accesibilidad.</p>
+            <a href="detalle-certificado.html?id=frontend" aria-label="Ver detalle del certificado de Desarrollo Frontend">Ver detalle</a>
+          </article>
+
+          <article class="glass-card certificate-card">
+            <div class="certificate-card__icon">02</div>
+            <h3>JavaScript Avanzado</h3>
+            <p>Manipulación del DOM, eventos, lógica, APIs y optimización de experiencias.</p>
+            <a href="detalle-certificado.html?id=javascript" aria-label="Ver detalle del certificado de JavaScript Avanzado">Ver detalle</a>
+          </article>
+
+          <article class="glass-card certificate-card">
+            <div class="certificate-card__icon">03</div>
+            <h3>Cloud & DevOps</h3>
+            <p>Fundamentos de despliegue, servidores, servicios en la nube y automatización.</p>
+            <a href="detalle-certificado.html?id=cloud" aria-label="Ver detalle del certificado de Cloud & DevOps">Ver detalle</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container contact" id="contacto">
+        <div class="glass-card contact-card">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2>Trabajemos juntos en tu próxima idea</h2>
+          </div>
+          <div class="contact-card__actions">
+            <a class="button" href="mailto:alfredosandoval@example.com">alfredosandoval@example.com</a>
+            <a class="button button--ghost" href="https://wa.me/573112451062" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-        <h4> DESARROLLADO POR ALFREDO SANDOVAL CONTACTO: 3112451062 &#169</h4>
 
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Alfredo Sandoval</p>
+        <p>Hecho con pasión • Diseño y código</p>
+      </div>
     </footer>
 
-</body>
+    <script type="module" src="style/main.js"></script>
+  </body>
 </html>

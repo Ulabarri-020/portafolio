@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos | Alfredo Sandoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+
+    <header class="topbar">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a href="index.html" class="brand"><span class="brand__dot"></span> Alfredo <strong>Sandoval</strong></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="main-menu">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="about.html">Sobre mí</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="certificados.html">Certificados</a>
+          <a href="curriculum.html">CV</a>
+        </div>
+        <a class="button button--ghost" href="index.html#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-shell container">
+      <section class="glass-card page-card">
+        <div class="page-card__intro">
+          <p class="eyebrow">Proyectos</p>
+          <h1>Soluciones pensadas para usuarios reales</h1>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-1"></div>
+            <div class="project-card__content">
+              <span class="badge">Landing Page</span>
+              <h3>Nova Studio</h3>
+              <p>Experiencia visual premium para una agencia digital con enfoque en conversión y marca.</p>
+              <div class="project-card__meta">
+                <span>Vite</span>
+                <span>UI</span>
+                <span>Responsive</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=nova">Ver detalle</a>
+                <a href="https://nova-studio-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-2"></div>
+            <div class="project-card__content">
+              <span class="badge">Dashboard</span>
+              <h3>Pulse Metrics</h3>
+              <p>Dashboard para análisis, KPI y seguimiento de métricas clave para equipos de negocio.</p>
+              <div class="project-card__meta">
+                <span>React</span>
+                <span>Charts</span>
+                <span>Analytics</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=pulse">Ver detalle</a>
+                <a href="https://pulse-metrics-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card">
+            <div class="project-card__visual gradient-3"></div>
+            <div class="project-card__content">
+              <span class="badge">E-commerce</span>
+              <h3>Solar Cart</h3>
+              <p>Catalogo digital para productos tecnológicos con experiencia de compra moderna.</p>
+              <div class="project-card__meta">
+                <span>Shop</span>
+                <span>UX</span>
+                <span>Growth</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="detalle-proyecto.html?id=solar">Ver detalle</a>
+                <a href="https://solar-cart-demo.vercel.app" target="_blank" rel="noreferrer">Vercel</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Alfredo Sandoval</p>
+        <p>Hecho con pasión • Diseño y código</p>
+      </div>
+    </footer>
+
+    <script type="module" src="style/main.js"></script>
+  </body>
+</html>
